@@ -1,7 +1,7 @@
 import React from 'react';
-import { FeatureContainer, FeatureButton } from './FeatureElements';
+import { FeatureContainer, FeatureButton } from './FeatureElementsThree';
 
-function Feature() {
+function FeatureThree() {
 	return (
 		<FeatureContainer>
 			<h1>Pizza of the Day</h1>
@@ -11,4 +11,4 @@ function Feature() {
 	);
 }
 
-export default Feature;
+export default FeatureThree;

@@ -1,3 +1,4 @@
+import React from 'react';
 import styled from 'styled-components';
 import ImgBg from '../../images/pizza-3.jpg';
 
@@ -48,7 +49,7 @@ export const HeroP = styled.p`
 `;
 
 export const HeroBtn = styled.button`
-	font-size: 1.4rem;
+font-size: 1.4rem;
 	padding: 1rem 4rem;
 	border: none;
 	background: #e31837;
@@ -62,5 +63,3 @@ export const HeroBtn = styled.button`
 		color: #000;
 	}
 `;
-
-

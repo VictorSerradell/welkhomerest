@@ -1,3 +1,4 @@
+import React from 'react';
 import {
 	FaFacebook,
 	FaInstagram,
@@ -15,13 +16,15 @@ import {
 	SocialIconLink,
 } from './FooterElements';
 
+
+
 function Footer() {
 	return (
 		<FooterContainer>
 			<FooterWrap>
 				<SocialMedia>
 					<SocialMediaWrap>
-						<SocialLogo to='/'>Pizza</SocialLogo>
+						<SocialLogo to='/'>welkhomeclub</SocialLogo>
 						<SocialIcons>
 							<SocialIconLink
 								href='/'

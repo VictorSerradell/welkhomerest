@@ -1,22 +1,26 @@
+import React from 'react';
 import { NavLink as Link } from 'react-router-dom';
 import styled from 'styled-components';
-import { FaPizzaSlice } from 'react-icons/fa';
+import { BiChat } from 'react-icons/bi';
 
 export const Nav = styled.nav`
 	background: transparent;
-	height: 80px;
+	height: 100px;
 	display: flex;
-	justify-content: center;
-	font-weight: 700;
+	justify-content: space-around;
+	font-weight: 50px;
+	
+
 `;
 
 export const NavLink = styled(Link)`
 	color: #fff;
-	font-size: 2rem;
+	font-size: 1rem;
 	display: flex;
 	align-items: center;
 	text-decoration: none;
 	cursor: pointer;
+	
 
 	@media screen and (max-width: 400px) {
 		position: absolute;
@@ -39,7 +43,7 @@ export const NavIcon = styled.div`
 	}
 `;
 
-export const Bars = styled(FaPizzaSlice)`
+export const Bars = styled(BiChat)`
 	font-size: 2rem;
 	transform: translate(-50%, -15%);
 `;
