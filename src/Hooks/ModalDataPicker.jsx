@@ -1,14 +1,11 @@
 import React, { useState } from "react";
-import { useForm } from 'react-hook-form';
-import DatePickers from "../components/Feature/DataPicker";
+import DatePickers from "../components/Feature/DataPickers";
+
 import { ModalContainer, Modal, ModalHeader, ModalContent} from"../Hooks/ModalElements";
 
 
 
 const ModalDataPicker = ({ onSubmit, onCancel, closeModal, children }) => {
-  const { handleSubmit, register, errors } = useForm();
-
-
 
   return (
 

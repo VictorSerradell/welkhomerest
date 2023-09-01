@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import ModalDataPicker from "../../Hooks/ModalDataPicker";
+import CustomModal from "../../Hooks/Modal";
 import { FeatureContainer, FeatureButton } from './FeatureElements';
 
 function Feature() {
@@ -22,7 +23,10 @@ function Feature() {
 	return (
 		<FeatureContainer>
 			<p>Sabores increíbles, las bebidas al peso</p>
-			<FeatureButton onClick={ModalDataPicker}>Reservar</FeatureButton>
+			<FeatureButton onClick={openModal}>Reservar</FeatureButton>
+			{modalOpen && <ModalDataPicker onSubmit = {handleButtonClick}
+      onCancel ={handleButtonClick} onClose = {handleButtonClick} isOpen = {modalOpen} closeModal = {handleButtonClick} />} {/* Renderiza el modal si modalOpen es verdadero */}
+			
 
 		</FeatureContainer>
 	);

@@ -22,8 +22,8 @@ position: fixed;
 
 export const Modal = styled.div`
 position: absolute;
-height:auto;
-width:auto;
+height:100%;
+width:100%;
 top:0;
 margin:50% 15%;
 background-color: #fff;

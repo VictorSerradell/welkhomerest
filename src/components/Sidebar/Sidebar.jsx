@@ -9,9 +9,9 @@ import {
 	SidebarRoute,
 } from './SideBarElements';
 
-function Sidebar({ isOpen, toggle }) {
+function Sidebar({ isopen, toggle }) {
 	return (
-		<SidebarContainer isOpen={isOpen}>
+		<SidebarContainer isopen={isopen}>
 			<Icon onClick={toggle}>
 				<CloseIcon />
 			</Icon>

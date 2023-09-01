@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import CustomModal from "../../Hooks/Modal";
+import ModalDataPicker from "../../Hooks/ModalDataPicker";
 import { FeatureContainer, FeatureButton } from './FeatureElementsTwo';
 
 function FeatureTwo() {
@@ -24,7 +24,7 @@ function FeatureTwo() {
 			<h1>Pizza of the Day</h1>
 			<p>Truffle alfredo sauce topped with 24 carat gold dust.</p>
 			<FeatureButton onClick={openModal}>Reservar</FeatureButton>
-			{modalOpen && <CustomModal onSubmit = {handleButtonClick}
+			{modalOpen && <ModalDataPicker onSubmit = {handleButtonClick}
       onCancel ={handleButtonClick} onClose = {handleButtonClick} isOpen = {modalOpen} closeModal = {handleButtonClick} />} {/* Renderiza el modal si modalOpen es verdadero */}
 		</FeatureContainer>
 	);
