@@ -3,6 +3,7 @@ import { NavLink as Link } from 'react-router-dom';
 import styled from 'styled-components';
 import { BiChat } from 'react-icons/bi';
 
+
 export const Nav = styled.nav`
 	background: transparent;
 	height: 100px;
@@ -14,8 +15,8 @@ export const Nav = styled.nav`
 `;
 
 export const NavLink = styled(Link)`
-	color: #fff;
-	font-size: 1rem;
+	color: #ffffff;
+	font-size: 16px;
 	display: flex;
 	align-items: center;
 	text-decoration: none;
@@ -30,12 +31,11 @@ export const NavLink = styled(Link)`
 `;
 
 export const NavIcon = styled.div`
-	display: block;
-	position: absolute;
-	top: 0;
-	right: 0;
-	cursor: pointer;
-	color: #fff;
+background: transparent;
+height: 100px;
+display: flex;
+justify-content: space-around;
+font-weight: 50px;
 
 	p {
 		transform: translate(-175%, 100%);

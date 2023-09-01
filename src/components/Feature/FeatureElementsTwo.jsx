@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import FeaturePic from '../../images/featured2.jpg';
+import FeaturePic from '../../images/pexels-igor-starkov.jpg';
 
 export const FeatureContainer = styled.div`
 	background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.1)),
@@ -29,16 +29,15 @@ export const FeatureContainer = styled.div`
 
 export const FeatureButton = styled.button`
 	font-size: 1.4rem;
-	padding: 0.6rem 3rem;
-	border: none;
-	background: #ffc500;
-	color: #000;
-	transition: 0.2s ease-out;
+padding: 1rem 4rem;
+border: none;
+background: #e31837;
+color: #fff;
+transition: 0.2s ease-out;
 
-	&:hover {
-		color: #fff;
-		background: #e31837;
-		transition: 0.2s ease-out;
-		cursor: pointer;
-	}
+&:hover {
+	background: #ffc500;
+	transition: 0.2s ease-out;
+	cursor: pointer;
+	color: #000;
 `;

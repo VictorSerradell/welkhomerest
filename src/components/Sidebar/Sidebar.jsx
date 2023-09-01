@@ -16,9 +16,8 @@ function Sidebar({ isOpen, toggle }) {
 				<CloseIcon />
 			</Icon>
 			<SidebarMenu>
-				<SidebarLink to='/'>Pizzas</SidebarLink>
-				<SidebarLink to='/'>Desserts</SidebarLink>
-				<SidebarLink to='/'>Full Menu</SidebarLink>
+				<SidebarLink to='/'>Reservas</SidebarLink>
+				<SidebarLink to='/'>Registrarse</SidebarLink>
 			</SidebarMenu>
 			<SideBtnWrap>
 				<SidebarRoute to='/'>Order Now</SidebarRoute>

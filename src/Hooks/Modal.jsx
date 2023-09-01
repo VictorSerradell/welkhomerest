@@ -1,42 +1,31 @@
 import React, { useState } from "react";
-import { createPortal } from "react-dom";
-import "../Hooks/Modal.css";
+import { useForm } from 'react-hook-form';
+import { ModalContainer, Modal, ModalHeader, ModalContent} from"../Hooks/ModalElements";
+import Form from "./Form";
 
- const CustomModal = ({ onSubmit, onCancel, closeModal, children }) => {
+
+const CustomModal = ({ onSubmit, onCancel, closeModal, children }) => {
+  const { handleSubmit, register, errors } = useForm();
+
+  const handleFormSubmit = (data) => {
+    // Lógica para manejar el envío del formulario aquí
+    onSubmit(data);
+  };
+
   return (
-    <div
-      className="modal-container"
-      onClick={(e) => {
-        if (e.target.className === "modal-container")
-          closeModal("Modal was closed");
-      }}
-    >
-      <div className="modal">
-        <div
-          className="modal-header"
-          onClick={() => closeModal("Modal was closed")}
-        >
-          <p className="close">&times;</p>
-        </div>
-        <div className="modal-content">{children}
-        <h1>Formulario de reserva</h1>
-        </div>
-        <div className="modal-footer">
-          <button
-            type="submit"
-            className="btn btn-submit"
-            onClick={() => onSubmit ()}
-          >Enviar
-          </button>
-          <button
-            type="submit"
-            className="btn btn-cancel"
-            onClick={() => onCancel ()}
-          >Cancelar
-          </button>
-        </div>
-      </div>
-    </div>
+
+    <Modal>
+      
+      <ModalContainer>
+        <ModalHeader>
+          <ModalContent>
+            <Form></Form>
+          </ModalContent>
+        </ModalHeader>
+
+      </ModalContainer>
+
+    </Modal>
   );
 };
 export default CustomModal;
