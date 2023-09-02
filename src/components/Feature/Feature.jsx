@@ -19,6 +19,7 @@ function Feature() {
 	  const closeModal = () => {
 		setModalOpen(false);
 	  };
+	  
 
 	return (
 		<FeatureContainer>

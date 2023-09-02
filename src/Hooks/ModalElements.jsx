@@ -1,15 +1,11 @@
 import styled from 'styled-components';
 
-
 export const close = styled.div`
-
-cursor: pointer;
-}
-
+  cursor: pointer;
 `;
 
 export const ModalContainer = styled.div`
-position: fixed;
+  position: fixed;
   left: 0;
   top: 0;
   width: 100%;
@@ -21,21 +17,26 @@ position: fixed;
 `;
 
 export const Modal = styled.div`
-position: absolute;
-height:100%;
-width:100%;
-top:0;
-margin:50% 15%;
-background-color: #fff;
-z-index:700;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  margin: 50% 15%;
+  z-index: 700;
 `;
 
 export const ModalHeader = styled.div`
-display: flex;
-justify-content: flex-end;
-font-size: 2rem;
+  display: flex;
+  justify-content: flex-end;
+  font-size: 2rem;
 `;
 
 export const ModalContent = styled.div`
-margin-bottom: 2rem;
+  margin-bottom: 2rem;
+`;
+
+export const ModalCloseButton = styled.div`
+  cursor: pointer;
+  font-size: 1.5rem;
+  margin-right: 1rem;
 `;

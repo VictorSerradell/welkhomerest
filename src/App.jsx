@@ -19,7 +19,7 @@ function App() {
 		  <Feature  />  
 		  <FeatureTwo  />
 		  <FeatureThree  />
-			<Footer  />
+		<Footer  />
 	<GlobalStyle />
   
 		</Router>

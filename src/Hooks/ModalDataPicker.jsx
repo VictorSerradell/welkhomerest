@@ -1,11 +1,17 @@
 import React, { useState } from "react";
 import DatePickers from "../components/Feature/DataPickers";
-
-import { ModalContainer, Modal, ModalHeader, ModalContent} from"../Hooks/ModalElements";
+import FormCustom  from "../Hooks/FormCustom";
+import { ModalContainer, Modal, ModalHeader, ModalContent,ModalCloseButton,} from"../Hooks/ModalElements";
 
 
 
 const ModalDataPicker = ({ onSubmit, onCancel, closeModal, children }) => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  // Función para cerrar el modal
+  const closeModalHandler = () => {
+    setIsModalOpen(false);
+    closeModal(); // Llama a la función de cierre del modal pasada como prop
+  };
 
   return (
 
@@ -13,8 +19,10 @@ const ModalDataPicker = ({ onSubmit, onCancel, closeModal, children }) => {
       
       <ModalContainer>
         <ModalHeader>
+        <ModalCloseButton onClick={closeModalHandler}>X</ModalCloseButton> {/* Botón para cerrar el modal */}
           <ModalContent>
             <DatePickers></DatePickers>
+            <FormCustom></FormCustom>
           </ModalContent>
         </ModalHeader>
 

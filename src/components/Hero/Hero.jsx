@@ -13,9 +13,18 @@ import {
 } from './HeroElements';
 
 function Hero() {
+  const [modalOpen, setModalOpen] = useState(false);
 
   const [isOpen, setIsOpen] = useState(false);
+
+  const handleButtonClick = (value) => {
+    setModalOpen(false);
+    
+  }
  
+  const openModal = () => {
+		setModalOpen(true);
+	  };
 
   const toggle = ({toggle}) => {
     setIsOpen(!isOpen);
@@ -30,7 +39,9 @@ function Hero() {
         <HeroItems>
           <HeroH1>WELKHOME CLUB</HeroH1>
           <HeroP>A tu futura casa para comer y beber... de manera única</HeroP>
-          <HeroBtn onClick={() => <ModalDataPicker />}>Reservar</HeroBtn>
+          <HeroBtn onClick={openModal}>Reservar</HeroBtn>
+          {modalOpen && <ModalDataPicker onSubmit = {handleButtonClick}
+      onCancel ={handleButtonClick} onClose = {handleButtonClick} isOpen = {modalOpen} closeModal = {handleButtonClick} />} {/* Renderiza el modal si modalOpen es verdadero */}
         </HeroItems>
       </HeroContent>
 
