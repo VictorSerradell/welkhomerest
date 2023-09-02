@@ -13,7 +13,7 @@ export const ModalContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: rgba(0, 0, 0, 0.5);
+ 
 `;
 
 export const Modal = styled.div`
@@ -23,16 +23,22 @@ export const Modal = styled.div`
   top: 0;
   margin: 50% 15%;
   z-index: 700;
+  
 `;
 
 export const ModalHeader = styled.div`
   display: flex;
   justify-content: flex-end;
   font-size: 2rem;
+    background: rgba(0, 0, 0, 0.6);
+  border-radius: 25px;
+  text-shadow: 2px 2px 4px rgba(255, 215, 0, 0.5);
 `;
 
 export const ModalContent = styled.div`
   margin-bottom: 2rem;
+
+  
 `;
 
 export const ModalCloseButton = styled.div`

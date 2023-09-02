@@ -19,7 +19,10 @@ export const FeatureContainer = styled.div`
 
 	h1 {
 		font-size: clamp(3rem, 5vw, 5rem);
-	}
+		opacity: 0.8; 
+		text-shadow: 2px 2px 4px rgba(255, 215, 0, 20); 
+	  }
+	  
 
 	p {
 		margin-bottom: 1rem;
@@ -29,6 +32,7 @@ export const FeatureContainer = styled.div`
 
 export const FeatureButton = styled.button`
 font-size: 1.4rem;
+border-radius: 25px;
 padding: 1rem 4rem;
 border: none;
 background: #e31837;

@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import CustomModal from "../../Hooks/Modal";
+import welkhomeclub from '../../images/welkhomeclub.png';
 import { Bars,Nav, NavIcon, NavLink} from './NavbarElements';
 
 function NavBar({ toggle }) {
@@ -20,18 +21,17 @@ function NavBar({ toggle }) {
 
 	return (
 		<>
-			<Nav>
-				<NavLink to='/'>welkhomeclub</NavLink>
-				<NavLink to='/' onClick={openModal}>Registrarse</NavLink>
-				{modalOpen && <CustomModal onSubmit = {handleButtonClick}
-				onCancel ={handleButtonClick} onClose = {handleButtonClick} isOpen = {modalOpen} closeModal = {handleButtonClick} />} {/* Renderiza el modal si modalOpen es verdadero */}
-				<NavIcon onClick={toggle}>
-				<p>Menu</p>
-					<Bars />
-					
-				</NavIcon>
-			</Nav>
-		</>
+		 <Nav>
+      <NavLink to='/' className='home_button'>
+        <img className="welkhomeclub" src={welkhomeclub} alt="Welkhome Club" />
+      </NavLink>
+      <NavLink to='/' onClick={openModal}>Registrarse</NavLink>
+      {modalOpen && <CustomModal onSubmit={handleButtonClick} onCancel={handleButtonClick} onClose={handleButtonClick} isOpen={modalOpen} closeModal={handleButtonClick} />}
+      <NavIcon onClick={toggle}>
+        <Bars />
+      </NavIcon>
+    </Nav>
+	</>
 	);
 }
 

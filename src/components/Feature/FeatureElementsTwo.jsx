@@ -1,14 +1,15 @@
 import React from 'react';
 import styled from 'styled-components';
-import FeaturePic from '../../images/pexels-igor-starkov.jpg';
+import FeaturePic from '../../images/pexels-pixabay.jpg';
 
 export const FeatureContainer = styled.div`
 	background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.1)),
-		url(${FeaturePic});
+	url(${FeaturePic});
 	height: 100vh;
 	max-height: 500px;
 	background-position: center;
 	background-size: cover;
+	
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -19,7 +20,10 @@ export const FeatureContainer = styled.div`
 
 	h1 {
 		font-size: clamp(3rem, 5vw, 5rem);
-	}
+		opacity: 0.5; 
+		text-shadow: 2px 2px 4px rgba(255, 215, 0, 0.5); 
+	  }
+	  
 
 	p {
 		margin-bottom: 1rem;
@@ -28,7 +32,8 @@ export const FeatureContainer = styled.div`
 `;
 
 export const FeatureButton = styled.button`
-	font-size: 1.4rem;
+font-size: 1.4rem;
+border-radius: 25px;
 padding: 1rem 4rem;
 border: none;
 background: #e31837;

@@ -19,7 +19,10 @@ export const FeatureContainer = styled.div`
 
 	h1 {
 		font-size: clamp(3rem, 5vw, 5rem);
-	}
+		opacity: 0.5; /* Establece la transparencia al 50% */
+		text-shadow: 2px 2px 4px rgba(255, 215, 0, 0.5); /* Agrega sombra a las letras */
+	  }
+	  
 
 	p {
 		margin-bottom: 1rem;
@@ -31,6 +34,7 @@ export const FeatureButton = styled.button`
 font-size: 1.4rem;
 padding: 1rem 4rem;
 border: none;
+border-radius: 25px;
 background: #e31837;
 color: #fff;
 transition: 0.2s ease-out;

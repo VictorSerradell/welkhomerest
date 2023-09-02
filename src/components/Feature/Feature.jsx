@@ -23,7 +23,8 @@ function Feature() {
 
 	return (
 		<FeatureContainer>
-			<p>Sabores increíbles, las bebidas al peso</p>
+			<h1>Sabores increíbles, las bebidas al peso</h1>
+			<p></p>
 			<FeatureButton onClick={openModal}>Reservar</FeatureButton>
 			{modalOpen && <ModalDataPicker onSubmit = {handleButtonClick}
       onCancel ={handleButtonClick} onClose = {handleButtonClick} isOpen = {modalOpen} closeModal = {handleButtonClick} />} {/* Renderiza el modal si modalOpen es verdadero */}

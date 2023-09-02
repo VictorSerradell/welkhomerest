@@ -21,8 +21,8 @@ function FeatureThree() {
 	  };
 	return (
 		<FeatureContainer>
-			<h1>Pizza of the Day</h1>
-			<p>Truffle alfredo sauce topped with 24 carat gold dust.</p>
+			<h1>¿Eres más de cocina tradicional?</h1>
+			<p>Solo o en compañia difruta de lo bueno.</p>
 			<FeatureButton onClick={openModal}>Reservar</FeatureButton>
 			{modalOpen && <ModalDataPicker onSubmit = {handleButtonClick}
       onCancel ={handleButtonClick} onClose = {handleButtonClick} isOpen = {modalOpen} closeModal = {handleButtonClick} />} {/* Renderiza el modal si modalOpen es verdadero */}

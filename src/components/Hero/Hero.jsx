@@ -37,7 +37,7 @@ function Hero() {
       <Sidebar isOpen={isOpen} toggle={toggle} />
       <HeroContent>
         <HeroItems>
-          <HeroH1>WELKHOME CLUB</HeroH1>
+          <HeroH1>WELKHOME </HeroH1>
           <HeroP>A tu futura casa para comer y beber... de manera única</HeroP>
           <HeroBtn onClick={openModal}>Reservar</HeroBtn>
           {modalOpen && <ModalDataPicker onSubmit = {handleButtonClick}
