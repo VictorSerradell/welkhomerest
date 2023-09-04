@@ -5,8 +5,11 @@ export const StyledForm = styled.form`
   flex-direction: column;
   align-items: center;
   background-color: rgba(255, 255, 255, 0); 
-  padding: 20px; 
+  padding: 1px; 
   border-radius: 10px;
+  width: 80vw; /* Ancho del formulario ajustado a 80% del ancho visible */
+  max-width: 400px; /* Establece un ancho máximo si lo deseas */
+  margin: 0 auto; /* Centra horizontalmente */
 `;
 
 export const StyledInput = styled.input`

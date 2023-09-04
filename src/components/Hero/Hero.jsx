@@ -44,7 +44,6 @@ function Hero() {
       onCancel ={handleButtonClick} onClose = {handleButtonClick} isOpen = {modalOpen} closeModal = {handleButtonClick} />} {/* Renderiza el modal si modalOpen es verdadero */}
         </HeroItems>
       </HeroContent>
-
     </HeroContainer>
   );
 }

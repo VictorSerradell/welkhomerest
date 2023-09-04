@@ -16,10 +16,9 @@ const ModalDataPicker = ({ onSubmit, onCancel, closeModal, children }) => {
   return (
 
     <Modal>
-      
       <ModalContainer>
         <ModalHeader>
-        <ModalCloseButton onClick={closeModalHandler}>X</ModalCloseButton> {/* Botón para cerrar el modal */}
+        <ModalCloseButton onClick={closeModalHandler}>X</ModalCloseButton> 
           <ModalContent>
             <DatePickers></DatePickers>
             <FormCustom></FormCustom>

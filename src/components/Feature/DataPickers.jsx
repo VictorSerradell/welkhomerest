@@ -31,7 +31,7 @@ function App() {
       style={{
         background: "rgba(0,0,0,0.0)",
         borderRadius: "6px",
-        padding: "220px",
+        padding: "80px",
         display: "flex",
         flexDirection: "row",
         alignItems: "center",

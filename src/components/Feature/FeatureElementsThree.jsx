@@ -19,8 +19,8 @@ export const FeatureContainer = styled.div`
 
 	h1 {
 		font-size: clamp(3rem, 5vw, 5rem);
-		opacity: 0.5; /* Establece la transparencia al 50% */
-		text-shadow: 2px 2px 4px rgba(255, 215, 0, 0.5); /* Agrega sombra a las letras */
+		opacity: 0.5; 
+		text-shadow: 2px 2px 4px rgba(255, 215, 0, 0.5); 
 	  }
 	  
 

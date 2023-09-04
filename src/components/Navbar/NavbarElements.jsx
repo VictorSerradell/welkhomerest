@@ -10,7 +10,7 @@ position: fixed;
 top: 0;
 left: 0;
 width: 100%;
-height: 80px;
+height: 60px;
 background-color: rgba(0, 0, 0, 0.8);
 display: flex;
 justify-content: space-between;
@@ -43,17 +43,23 @@ export const NavLink = styled(Link)`
 `;
 
 export const NavIcon = styled.div`
-display: block;
-position: absolute;
-top: 20px;
-right: 20px;
-cursor: pointer;
-color: #fff;
+display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  color: #fff
 
-p {
-	margin-bottom: 1rem;
-		font-size: clamp(1rem, 3vw, 2rem);
-}
+display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  color: #fff
 
 	
 `;

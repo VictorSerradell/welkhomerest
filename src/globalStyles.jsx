@@ -7,7 +7,7 @@ export const GlobalStyle = createGlobalStyle`
   }
   .GlobalStyle {
     overscroll-behavior: none;
-    overflow-x: auto; /* Habilita el desplazamiento horizontal */
+    overflow-x: auto; 
     width: 600%;
     height: 100%;
     display: flex;

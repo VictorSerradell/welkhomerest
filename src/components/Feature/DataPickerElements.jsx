@@ -2,14 +2,14 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
   background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.1));
-  height: 100vh;
+  height: 10vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   color: #fff;
   text-align: center;
-  padding: 0 1rem;
+
 
   h2 {
     font-size: clamp(2rem, 5vw, 3rem);

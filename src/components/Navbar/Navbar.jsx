@@ -25,7 +25,6 @@ function NavBar({ toggle }) {
       <NavLink to='/' className='home_button'>
         <img className="welkhomeclub" src={welkhomeclub} alt="Welkhome Club" />
       </NavLink>
-      <NavLink to='/' onClick={openModal}>Registrarse</NavLink>
       {modalOpen && <CustomModal onSubmit={handleButtonClick} onCancel={handleButtonClick} onClose={handleButtonClick} isOpen={modalOpen} closeModal={handleButtonClick} />}
       <NavIcon onClick={toggle}>
         <Bars />
