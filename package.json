@@ -10,7 +10,8 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "start": "serve dist -s -n -L -p $PORT"
   },
   "dependencies": {
     "@emotion/react": "^11.11.1",
@@ -29,6 +30,7 @@
     "react-modal": "^3.16.1",
     "react-router-dom": "^6.15.0",
     "react-time-picker": "^6.5.0",
+    "serve": "^14.2.1",
     "styled-components": "^6.0.7"
   },
   "devDependencies": {
