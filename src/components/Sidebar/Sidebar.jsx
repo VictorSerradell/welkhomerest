@@ -48,6 +48,7 @@ function Sidebar({ isOpen, toggle }) {
         <CloseIcon />
       </Icon>
       <SidebarMenu>
+      {showCustomModal && <CustomModal />}
         <SidebarLink to="/" onClick={openFormCustom}>
           Reserva
         </SidebarLink>
