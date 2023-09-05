@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const Container = styled.div`
   background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.1));
@@ -10,7 +10,6 @@ export const Container = styled.div`
   color: #fff;
   text-align: center;
 
-
   h2 {
     font-size: clamp(2rem, 5vw, 3rem);
     color: black;
@@ -20,7 +19,7 @@ export const Container = styled.div`
     font-size: 1.4rem;
     padding: 10px 20px;
     border: none;
-    background: #007BFF;
+    background: #007bff;
     color: #fff;
     border-radius: 4px;
     cursor: pointer;
@@ -29,10 +28,10 @@ export const Container = styled.div`
   }
 
   button.accept {
-    background: #28A745;
+    background: #28a745;
   }
 
   button.cancel {
-    background: #DC3545;
+    background: #dc3545;
   }
 `;

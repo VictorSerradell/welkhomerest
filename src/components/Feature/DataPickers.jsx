@@ -41,41 +41,43 @@ function App() {
         position: "relative", // Agrega esta propiedad
       }}
     >
-    
       {isModalOpen && (
-        
-          <div
+        <div
+          style={{
+            backgroundColor: "rgba(255,255,255,0.0)",
+            padding: "10px",
+            borderRadius: "4px",
+            width: "100%",
+            height: "auto",
+            textAlign: "center",
+          }}
+        >
+          <p
             style={{
-              backgroundColor: "rgba(255,255,255,0.0)",
-              padding: "10px",
-              borderRadius: "4px",
-              width: "auto",
-              height:"auto",
-              textAlign: "center",
+              color: "#ffffff",
             }}
           >
-            <DatePicker
-              showIcon
-              selected={selectedDate}
-              onChange={handleDateChange}
-              isClearable
-              showTimeSelect
-              timeFormat="HH:mm"
-              timeIntervals={15}
-              timeCaption="Hora"
-              dateFormat="MMMM d, yyyy h:mm aa"
-              style={{
-                fontSize: "16px",
-                border: "1px solid #ccc",
-                borderRadius: "8px",
-                width: "80%",
-                height: "80%",
-              }}
-            />
-
-            
-          </div>
-        
+            Selecciona Fecha
+          </p>
+          <DatePicker
+            showIcon
+            selected={selectedDate}
+            onChange={handleDateChange}
+            isClearable
+            showTimeSelect
+            timeFormat="HH:mm"
+            timeIntervals={15}
+            timeCaption="Hora"
+            dateFormat="MMMM d, yyyy h:mm aa"
+            style={{
+              fontSize: "16px",
+              border: "1px solid #ccc",
+              borderRadius: "8px",
+              width: "80%",
+              height: "80%",
+            }}
+          />
+        </div>
       )}
     </div>
   );

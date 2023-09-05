@@ -1,9 +1,13 @@
 import React, { useState } from "react";
 import DatePickers from "../components/Feature/DataPickers";
-import FormCustom  from "../Hooks/FormCustom";
-import { ModalContainer, Modal, ModalHeader, ModalContent,ModalCloseButton,} from"../Hooks/ModalElements";
-
-
+import FormCustom from "../Hooks/FormCustom";
+import {
+  ModalContainer,
+  Modal,
+  ModalHeader,
+  ModalContent,
+  ModalCloseButton,
+} from "../Hooks/ModalElements";
 
 const ModalDataPicker = ({ onSubmit, onCancel, closeModal, children }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -14,19 +18,16 @@ const ModalDataPicker = ({ onSubmit, onCancel, closeModal, children }) => {
   };
 
   return (
-
     <Modal>
       <ModalContainer>
         <ModalHeader>
-        <ModalCloseButton onClick={closeModalHandler}>X</ModalCloseButton> 
+          <ModalCloseButton onClick={closeModalHandler}>X</ModalCloseButton>
           <ModalContent>
             <DatePickers></DatePickers>
             <FormCustom></FormCustom>
           </ModalContent>
         </ModalHeader>
-
       </ModalContainer>
-
     </Modal>
   );
 };

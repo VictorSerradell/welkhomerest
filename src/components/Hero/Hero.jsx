@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import NavBar from '../Navbar/Navbar';
-import Sidebar from '../Sidebar/Sidebar';
+import NavBar from "../Navbar/Navbar";
+import Sidebar from "../Sidebar/Sidebar";
 import ModalDataPicker from "../../Hooks/ModalDataPicker";
 import CustomModal from "../../Hooks/Modal"; // Asegúrate de ajustar la ruta y el nombre del componente
 import {
@@ -10,7 +10,7 @@ import {
   HeroH1,
   HeroP,
   HeroBtn,
-} from './HeroElements';
+} from "./HeroElements";
 
 function Hero() {
   const [modalOpen, setModalOpen] = useState(false);
@@ -19,20 +19,18 @@ function Hero() {
 
   const handleButtonClick = (value) => {
     setModalOpen(false);
-    
-  }
- 
-  const openModal = () => {
-		setModalOpen(true);
-	  };
+  };
 
-  const toggle = ({toggle}) => {
+  const openModal = () => {
+    setModalOpen(true);
+  };
+
+  const toggle = ({ toggle }) => {
     setIsOpen(!isOpen);
   };
 
-
   return (
-    <HeroContainer>
+<HeroContainer>
       <NavBar toggle={toggle} />
       <Sidebar isOpen={isOpen} toggle={toggle} />
       <HeroContent>
